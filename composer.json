@@ -12,7 +12,7 @@
     ],
     "license": "BSD-3-Clause",
     "require": {
-        "titledk/silverstripe-calendar": "^2",
+        "titledk/silverstripe-calendar": "^1",
         "weboftalent/gridrows": "^2"
     },
     "extra": {
