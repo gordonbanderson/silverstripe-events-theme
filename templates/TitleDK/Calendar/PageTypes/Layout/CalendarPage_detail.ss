@@ -9,7 +9,7 @@
         </section>
     </div>
     <div class="row">
-        <section class="col-md-9" style="background: yellow;">
+        <section class="col-md-9">
             <% include EventDetail %>
 
             <% if $Event.Registerable %>
