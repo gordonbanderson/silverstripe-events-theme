@@ -1,0 +1,21 @@
+{
+    "name": "suilven/events-theme",
+    "description": "Bootstrap 4 base theme for titledk/silverstripe-calendar package",
+    "type": "silverstripe-theme",
+    "keywords": [
+        "silverstripe",
+        "theme",
+        "suilven",
+        "events",
+        "registrations",
+        "calendar"
+    ],
+    "license": "BSD-3-Clause",
+    "require": {
+        "titledk/silverstripe-calendar": "^2",
+        "weboftalent/gridrows": "^2"
+    },
+    "extra": {
+        "installer-name": "eventscalendar"
+    }
+}
