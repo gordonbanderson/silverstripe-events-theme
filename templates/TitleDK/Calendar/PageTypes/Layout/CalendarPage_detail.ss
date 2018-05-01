@@ -1,31 +1,15 @@
 <div class="container">
     <div class="row">
-        <section class="col-md-10 col-md-offset-1">
+        <section class="col-md-12">
             <div class="page-header">
+                <% include FLC/SponsorLink %>
                 $Breadcrumbs
-                <h1>$Title</h1>
+                <h1><% with $Event %>$Title <small><% include TitleDK/Calendar/EventDateDescription %></small><% end_with %> </h1>
             </div>
         </section>
     </div>
     <div class="row">
-        <section class="col-md-12">
-            <% if $ElementalArea %>
-                <%-- Support for content blocks, if enabled --%>
-                <% if $ElementalArea.RichLinks %>
-                    $ElementalArea.RichLinks %>
-                <% else %>
-                    $ElementalArea
-                <% end_if %>
-            <% else %>
-                <%-- CMS page content --%>
-                <% if $Content.RichLinks %>
-                    $Content.RichLinks
-                <% else %>
-                    $Content
-                    <div id="calendar"></div>
-                <% end_if %>
-            <% end_if %>
-
+        <section class="col-md-9" style="background: yellow;">
             <% include EventDetail %>
 
             <% if $Event.Registerable %>
@@ -33,8 +17,9 @@
             <% end_if %>
 
             $Form
-            <% include RelatedPages %>
             $CommentsForm
+
+            <% include PageMeta/InlineFooter %>
         </section>
 
         <aside class="col-md-3">
@@ -42,4 +27,8 @@
         </aside>
     </div>
 </div>
-<% include PageUtilities %>
+
+
+
+
+

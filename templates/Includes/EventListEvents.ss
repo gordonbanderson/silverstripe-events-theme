@@ -8,19 +8,9 @@
                     <h6><a href="$InternalLink">$Title</a></h6>
                     <ul class="list-unstyled list-inline">
 
-                        <% if $StartAndEndDates %>
-                            <li class="list-inline-item">$StartAndEndDates.RAW</li>
-                        <% else %>
-                            <% if $AllDay %>
-                                <li class="list-inline-item">$StartDateTime.DayOfMonth(true) $StartDateTime.Format('MMM, Y')
-                                    (All Day)
-                                </li>
-                            <% else %>
-                                <li class="list-inline-item">$FormattedTimeframe</li>
-                            <% end_if %>
-                        <% end_if %>
+                        <li class="list-inline-item"><% include TitleDK/Calendar/EventDateDescription %></li>
                     </ul>
-                    $DetailsSummary.RAW
+                    $DetailsSummary.RAW ****
                 </div>
 
                 <div class="footer-row">

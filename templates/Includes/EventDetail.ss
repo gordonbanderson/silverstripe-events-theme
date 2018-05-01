@@ -19,25 +19,15 @@
             </div>
         </div>
 
-    <div class="col-sm-11">
-        <h4>$Title</h4>
     <% end_with %>
 
     <% include FlashMessages %>
 
     <% with $Event %>
+        <% if $FeaturedImage %>
+                <img class="img-fluid rounded" src="$FeaturedImage.FocusFill(750, 491).URL" alt="">
+        <% end_if %>
 
-        <div class="datesAndTimeframe">
-            <% if $StartAndEndDates %>
-                <span>$StartAndEndDates</span>
-            <% else %>
-                <% if $AllDay %>
-                    <span>All Day</span>
-                <% else %>
-                    <span>$FormattedTimeframe</span>
-                <% end_if %>
-            <% end_if %>
-        </div>
         <% if $EventPage %>
             <% with $EventPage %>
                 <a href="$Link" style="margin: 12px 0 0 19px;display: block;">Go to the $Title page</a>
