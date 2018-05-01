@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.0.2](https://github.com/gordonbanderson/silverstripe-events-theme/tree/0.0.2) (2018-05-01)
+[Full Changelog](https://github.com/gordonbanderson/silverstripe-events-theme/compare/0.0.1...0.0.2)
+
 ## [0.0.1](https://github.com/gordonbanderson/silverstripe-events-theme/tree/0.0.1) (2018-05-01)
 
 
