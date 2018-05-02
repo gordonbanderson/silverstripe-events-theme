@@ -10,7 +10,7 @@
 
                         <li class="list-inline-item"><% include TitleDK/Calendar/EventDateDescription %></li>
                     </ul>
-                    $DetailsSummary.RAW ****
+                    $DetailsSummary.RAW
                 </div>
 
                 <div class="footer-row">
