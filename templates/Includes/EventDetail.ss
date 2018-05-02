@@ -1,4 +1,4 @@
-<% include CalendarPageMenu %>
+<% include TitleDK/Calendar/CalendarPageMenu %>
 <div class="eventFullDetails">
 
 <% include FlashMessages %>
