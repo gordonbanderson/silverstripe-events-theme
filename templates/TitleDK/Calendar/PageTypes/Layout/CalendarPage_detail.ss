@@ -24,7 +24,7 @@
 
         <div class="blog-sidebar col-md-4">
             <% include FollowUs %>
-        </div>
+        </div>N
     </div>
 </div>
 

@@ -1,22 +1,28 @@
-<!-- Page Content -->
 <div class="container">
-
     <div class="row">
-
-        <!-- Event Entries Column -->
-        <div class="col-md-8">
-            <h1>$Title</h1>
-
+        <section class="col-md-12">
+            <div class="page-header">
+                <% include FLC/SponsorLink %>
+                $Breadcrumbs
+                <h1>$Title</h1>
+            </div>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-8">
+            $Content
             <% include EventList %>
 
             $Form
-        </div>
+            $CommentsForm
+
+            <% include PageMeta/BlogPostInlineFooter %>
+        </section>
+
         <div class="blog-sidebar col-md-4">
             <% include FollowUs %>
-            <% include EventCategoriesWidget %>
         </div>
 
+        <% include SilverStripe\\Blog\\BlogSideBar %>
     </div>
-    <!-- /.row -->
-
 </div>
