@@ -9,7 +9,7 @@
         </section>
     </div>
     <div class="row">
-        <section class="col-md-9">
+        <section class="col-md-8">
             <% include EventDetail %>
 
             <% if $Event.Registerable %>
@@ -22,9 +22,9 @@
             <% include PageMeta/InlineFooter %>
         </section>
 
-        <aside class="col-md-3">
-            <% include SidebarNav %>
-        </aside>
+        <div class="blog-sidebar col-md-4">
+            <% include FollowUs %>
+        </div>
     </div>
 </div>
 
