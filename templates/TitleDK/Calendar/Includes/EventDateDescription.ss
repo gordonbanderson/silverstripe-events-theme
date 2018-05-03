@@ -1,9 +1,9 @@
 <% if $StartAndEndDates %>
- $StartAndEndDates.RAW
+    $StartAndEndDates.RAW
 <% else %>
     <% if $AllDay %>
-        $StartDateTime.DayOfMonth(true) $StartDateTime.Format('MMM, Y') (All Day)
+       $StartDateTime.DayOfMonth(true) $StartDateTime.Format('MMM, Y') (All Day)
     <% else %>
-   $FormattedTimeframe
+   $FormattedStartDate $FormattedTimeframe
     <% end_if %>
 <% end_if %>
