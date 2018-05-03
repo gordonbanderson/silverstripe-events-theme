@@ -4,7 +4,7 @@
         <ul class="list-unstyled list-inline">
             <% loop $Tags %>
                 <li class="list-inline-item">
-                    <a href="$Link" title="$Title">
+                    <a href="$Top.Link/../../$Link" title="$Title">
                         <span class="text tagCount{$NormalizedTag}">$TagName</span>
                     </a>
                 </li>
