@@ -1,4 +1,4 @@
-<% loop $SplitDataListIntoGridRows('Events',2) %>
+<% loop $GridLayout %>
     <div class="row">
         <% loop $Columns %>
             <div class="col-sm-12 col-md-6 has-footer-row">

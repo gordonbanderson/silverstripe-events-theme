@@ -4,6 +4,12 @@
 <% include FlashMessages %>
 
 <% with $Event %>
+    <ul class="tags-list list-inline">
+        <% loop Tags %>
+            <li class="list-inline-item"><a href="{$Top.Link}/../../tag/$URLSegment"><i class="fa fa-tag" aria-hidden="true"></i>
+                $Title</a></li>
+        <% end_loop %>
+    </ul>
     <% if $FeaturedImage %>
             <img class="img-fluid rounded mb-2" src="$FeaturedImage.FocusFill(825, 540).URL" alt="">
     <% end_if %>
