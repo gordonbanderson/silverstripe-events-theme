@@ -1,4 +1,3 @@
-Calendar Event months widget
 <% if $YearMonths %>
     <div class="widget">
         <h4>$Title</h4>
