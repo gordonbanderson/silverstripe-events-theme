@@ -2,37 +2,29 @@
     <div class="row">
         <section class="col-md-12">
             <div class="page-header">
+                <% include FLC/SponsorLink %>
                 $Breadcrumbs
-                <% include CalendarPageMenu CurrentMenu='calendarview' %>
-                <% include FullcalendarCustomNav CurrentMenu='calendarview' %>
+
                 <h1>$Title</h1>
             </div>
         </section>
     </div>
     <div class="row">
-        <section class="col-md-12">
-            <% if $ElementalArea %>
-                <%-- Support for content blocks, if enabled --%>
-                <% if $ElementalArea.RichLinks %>
-                    $ElementalArea.RichLinks %>
-                <% else %>
-                    $ElementalArea
-                <% end_if %>
-            <% else %>
-                <%-- CMS page content --%>
-                <% if $Content.RichLinks %>
-                    $Content.RichLinks
-                <% else %>
-                    $Content
-                <% end_if %>
-            <% end_if %>
-
-            <% include Fullcalendar %>
+        <section class="col-md-9">
+            $Content
+            <% include TitleDK/Calendar/Fullcalendar %>
 
             $Form
-            <% include RelatedPages %>
             $CommentsForm
+
+            <% include PageMeta/InlineFooter %>
         </section>
+
+        <aside class="col-md-3">
+            <% include TitleDK/Calendar/CalendarPageMenu CurrentMenu='calendarview' %>
+            <% include TitleDK/Calendar/FullcalendarCustomNav CurrentMenu='calendarview' %>
+
+        </aside>
     </div>
 </div>
-<% include PageUtilities %>
+
