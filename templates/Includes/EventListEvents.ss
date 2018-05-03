@@ -27,10 +27,12 @@
                 </div>
             </div>
         <% end_loop %>
+
+
     </div>
 <% end_loop %>
 
+<% with $Events %><% include PageFurniture/Pagination %><% end_with %>
 
 
-
-
+<% include PageMeta/EmptyInlineFooter %>

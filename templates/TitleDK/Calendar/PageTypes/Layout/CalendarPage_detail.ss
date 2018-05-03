@@ -22,9 +22,8 @@
             <% include PageMeta/InlineFooter %>
         </section>
 
-        <div class="blog-sidebar col-md-4">
-            <% include FollowUs %>
-        </div>N
+        <% include TitleDK/Calendar/CalendarSidebar %>
+
     </div>
 </div>
 

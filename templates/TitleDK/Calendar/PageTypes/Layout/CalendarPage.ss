@@ -4,7 +4,7 @@
             <div class="page-header">
                 <% include FLC/SponsorLink %>
                 $Breadcrumbs
-                <h1>$Title</h1>
+                <h1>$Title  <small>$CurrentMonthStr (<% with $Events %>{$CurrentPage}/{$TotalPages}<% end_with %>)</small></h1>
             </div>
         </section>
     </div>
@@ -19,10 +19,7 @@
             <% include PageMeta/BlogPostInlineFooter %>
         </section>
 
-        <div class="blog-sidebar col-md-4">
-            <% include FollowUs %>
-        </div>
+        <% include TitleDK/Calendar/CalendarSidebar %>
 
-        <% include SilverStripe\\Blog\\BlogSideBar %>
     </div>
 </div>
