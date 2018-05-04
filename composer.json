@@ -18,7 +18,6 @@
     "extra": {
         "installer-name": "eventscalendar"
     },
-    ,
     "minimum-stability": "dev",
     "prefer-stable": true
 }
