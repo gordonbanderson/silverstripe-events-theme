@@ -4,7 +4,7 @@
             <div class="page-header">
                 <% include FLC/SponsorLink %>
                 $Breadcrumbs
-                <h1>$Title  <small>$TagTitle (<% with $Events %>{$CurrentPage}/{$TotalPages}<% end_with %>)</small></h1>
+                <h1>$Title  <small class="ml-4"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;$TagTitle (<% with $Events %>{$CurrentPage}/{$TotalPages}<% end_with %>)</small></h1>
             </div>
         </section>
     </div>
