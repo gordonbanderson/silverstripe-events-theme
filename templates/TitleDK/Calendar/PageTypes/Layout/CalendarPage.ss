@@ -16,7 +16,7 @@
             $Form
             $CommentsForm
 
-            <% include PageMeta/BlogPostInlineFooter %>
+            <% include PageMeta/InlineFooter %>
         </section>
 
         <% include TitleDK/Calendar/CalendarSidebar %>
