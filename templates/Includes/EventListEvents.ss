@@ -4,7 +4,7 @@
             <div class="col-sm-12 col-md-6 has-footer-row">
 
                 <div class="blog-card-4 mb-4">
-                    <img src="$FeaturedImage.FocusFillMax(350,229).Link" alt="" class="img-fluid">
+                    <% include Utils/RenderImage Image=$FeaturedImage, Width=350, Height=229 %>
                     <h6><a href="$InternalLink">$Title</a></h6>
                     <ul class="list-unstyled list-inline">
 
