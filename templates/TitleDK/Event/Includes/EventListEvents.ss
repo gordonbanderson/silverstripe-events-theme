@@ -8,7 +8,7 @@
                     <h6><a href="$InternalLink">$Title</a></h6>
                     <ul class="list-unstyled list-inline">
 
-                        <li class="list-inline-item"><% include TitleDK/Calendar/EventDateDescription %></li>
+                        <li class="list-inline-item"><% include TitleDK/Event/EventDateDescription %></li>
                     </ul>
                     $DetailsSummary.RAW
                 </div>

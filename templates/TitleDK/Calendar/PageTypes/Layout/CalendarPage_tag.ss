@@ -11,7 +11,7 @@
     <div class="row">
         <section class="col-md-8">
             $Content
-            <% include EventList %>
+            <% include TitleDK/Event/EventList %>
 
             $Form
             $CommentsForm
