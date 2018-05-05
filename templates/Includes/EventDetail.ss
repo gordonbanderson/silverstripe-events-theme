@@ -9,9 +9,8 @@
                 $Title</a></li>
         <% end_loop %>
     </ul>
-    <% if $FeaturedImage %>
-            <img class="img-fluid rounded mb-2" src="$FeaturedImage.FocusFill(825, 540).URL" alt="">
-    <% end_if %>
+
+    <% include Utils/RenderImage Image=$FeaturedImage, Height=540, Width=825, ExtraClasses='mb-2' %>
 
     <% if $EventPage %>
         <% with $EventPage %>
