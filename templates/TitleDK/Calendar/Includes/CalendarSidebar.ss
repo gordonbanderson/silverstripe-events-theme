@@ -1,4 +1,5 @@
 <div class="blog-sidebar col-md-4">
+    <% include FLC/SponsorLink %>
     <% include FollowUs %>
     <% include TitleDK/Calendar/CalendarPageMenu %>
 
