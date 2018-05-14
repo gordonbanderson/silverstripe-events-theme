@@ -1,7 +1,5 @@
 <div class="eventFullDetails">
 
-    <% include FlashMessages %>
-
     <% with $Event %>
         <ul class="tags-list list-inline">
             <% loop Tags %>
