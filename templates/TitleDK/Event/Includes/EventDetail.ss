@@ -9,7 +9,7 @@
             <% end_loop %>
         </ul>
 
-        <% include Utils/RenderImage Image=$FeaturedImage, Height=540, Width=825, ExtraClasses='mb-4' %>
+        <% include Utils/RenderImageWithWidth Image=$FeaturedImage, Width=825, ExtraClasses='mb-4' %>
 
         $Details
 
